@@ -1,0 +1,4 @@
+# @package _global_
+architecture:
+    name: resnet18
+    d: 32

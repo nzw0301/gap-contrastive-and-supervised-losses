@@ -1,0 +1,8 @@
+# @package _global_
+optimizer:
+    name: sgd
+    momentum: 0.9
+    lr: 0.15 # learning rate
+    weight_decay: 0.0 # weight decay
+    nesterov: false
+    mini_batch_size: 2048

@@ -1,0 +1,15 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - architecture: language/contrastive
+    - contrastive: language/wiki3029
+    - dataset: language/wiki3029
+    - loss: contrastive_loss
+    - optimizer: language/contrastive_sgd
+    - lr_scheduler: language/cosine_warmup
+    - override hydra/output: parallel
+
+name: contrastive
+gpu_id: 0
+seed: 7
+epochs: 90
+output_model_name: language_contrastive_model.pt

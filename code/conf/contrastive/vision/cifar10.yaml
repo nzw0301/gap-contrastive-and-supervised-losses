@@ -1,0 +1,5 @@
+# @package _global_
+dataset:
+    name: cifar10
+    train_num_n_pairs_per_sample: 1
+    val_num_n_pairs_per_sample: 0 # not use validation contrastive data by default

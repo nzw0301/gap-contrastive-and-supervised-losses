@@ -1,0 +1,7 @@
+# @package _global_
+dataset:
+    name: wiki3029
+    validation_ratio: 0.1
+    test_ratio: 0.2
+    min_freq: 5
+    num_used_classes: 3029

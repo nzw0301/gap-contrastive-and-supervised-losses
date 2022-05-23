@@ -1,0 +1,8 @@
+# @package _global_
+optimizer:
+    name: sgd
+    momentum: 0.9
+    lr: 0.006 # learning rate. Higher learning rate makes strange learning curve of val loss like `\/---`
+    weight_decay: 0.0 # weight decay
+    nesterov: false
+    mini_batch_size: 512

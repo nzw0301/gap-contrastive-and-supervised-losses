@@ -1,0 +1,12 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - dataset: language/wiki3029
+    - override hydra/output: parallel
+
+name: mean
+gpu_id: 0
+seed: 7
+target_weight_file: model.pt
+normalize: false
+use_projection_head: true
+mini_batch_size: 1024

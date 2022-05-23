@@ -1,0 +1,9 @@
+# @package _global_
+dataset:
+    name: cifar10
+    validation_ratio: 0.1
+    # data augmentation parameters
+    simclr_data_augmentation: true
+    size: 32
+    strength: 0.5
+    num_used_classes: 10

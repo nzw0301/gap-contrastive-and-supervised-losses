@@ -1,0 +1,15 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - architecture: vision/contrastive
+    - contrastive: vision/cifar100
+    - dataset: vision/cifar100
+    - loss: contrastive_loss
+    - optimizer: vision/contrastive_sgd
+    - lr_scheduler: vision/cosine_warmup
+    - distributed: base
+    - override hydra/output: distributed
+
+name: contrastive
+seed: 7
+epochs: 2000
+output_model_name: vision_contrastive_model.pt

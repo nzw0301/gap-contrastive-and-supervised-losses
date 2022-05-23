@@ -1,0 +1,16 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - architecture: toy/contrastive
+    - contrastive: toy/circle
+    - dataset: toy/circle
+    - loss: contrastive_loss
+    - optimizer: toy/adam
+    - lr_scheduler: toy_plateau
+
+seed: 7
+gpu_id: 0
+epochs: 300
+normalize_eval: true
+save_representation_plots: false
+output_log_name: toy_results.json
+output_plot_name: toy_plot.png

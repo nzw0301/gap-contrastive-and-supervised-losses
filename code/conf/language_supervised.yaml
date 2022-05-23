@@ -1,0 +1,13 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - architecture: language/supervised
+    - dataset: language/wiki3029
+    - optimizer: language/supervised_sgd
+    - lr_scheduler: language/cosine_warmup
+    - override hydra/output: parallel
+
+name: supervised
+gpu_id: 0
+seed: 7
+epochs: 90
+output_model_name: language_supervised_model.pt

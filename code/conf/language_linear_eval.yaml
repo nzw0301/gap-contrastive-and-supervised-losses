@@ -1,0 +1,15 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - dataset: language/wiki3029
+    - optimizer: language/linear_sgd
+    - lr_scheduler: language/cosine_no_warmup
+    - override hydra/output: parallel
+
+name: linear
+gpu_id: 0
+seed: 7
+epochs: 30
+output_model_name: linear.pt
+target_weight_file: model.pt
+normalize: false
+use_projection_head: true

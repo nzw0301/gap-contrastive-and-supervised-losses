@@ -1,0 +1,6 @@
+# @package _global_
+architecture:
+    name: fasttext
+    embedding_dim: 256
+    d: 128  # ignored when with_projection_head is false
+    with_projection_head: false

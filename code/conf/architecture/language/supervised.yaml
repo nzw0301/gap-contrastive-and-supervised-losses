@@ -1,0 +1,4 @@
+# @package _global_
+architecture:
+    name: fasttext
+    embedding_dim: 256

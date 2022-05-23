@@ -1,0 +1,4 @@
+# @package _global_
+lr_scheduler:
+    name: plateau
+    patience: 10

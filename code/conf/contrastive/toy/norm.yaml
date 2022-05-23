@@ -1,0 +1,4 @@
+# @package _global_
+dataset:
+    name: norm
+    num_n_pairs_per_sample: 1

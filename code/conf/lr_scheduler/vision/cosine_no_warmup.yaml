@@ -1,0 +1,5 @@
+# @package _global_
+lr_scheduler:
+    name: cosine
+    warmup_epochs: 0
+    linear_schedule: false

@@ -1,0 +1,9 @@
+# @package _global_
+optimizer:
+    name: sgd
+    momentum: 0.9
+    lr: 0.003 # learning rate
+    weight_decay: 0. # weight decay
+    nesterov: true
+    mini_batch_size: 512
+    # follow SWaV parameter since SimCLR uses TPUs https://github.com/facebookresearch/swav/blob/master/eval_linear.py#L64-L67

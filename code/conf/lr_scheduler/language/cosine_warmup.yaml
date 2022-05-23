@@ -1,0 +1,5 @@
+# @package _global_
+lr_scheduler:
+    name: cosine
+    warmup_epochs: 3  # 3 / 90=0.03%
+    linear_schedule: false

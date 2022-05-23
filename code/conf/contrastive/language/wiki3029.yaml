@@ -1,0 +1,5 @@
+# @package _global_
+dataset:
+    name: wiki3029
+    train_num_n_pairs_per_sample: 1
+    val_num_n_pairs_per_sample: 0 # by default, we do not use validation data for contrastive learning

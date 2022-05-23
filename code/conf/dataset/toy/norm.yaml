@@ -1,0 +1,6 @@
+# @package _global_
+dataset:
+    name: norm
+    training_ratio: 0.6
+    num_latent_classes: 10
+    num_samples_per_class: 1000

@@ -1,0 +1,15 @@
+defaults:
+    - _self_  # see https://hydra.cc/docs/upgrades/1.0_to_1.1/default_composition_order/
+    - dataset: vision/cifar100
+    - distributed: base
+    - optimizer: vision/linear_sgd
+    - lr_scheduler: vision/cosine_no_warmup
+    - override hydra/output: distributed
+
+name: linear
+seed: 7
+epochs: 100
+output_model_name: linear.pt
+target_weight_file: model.pt
+normalize: false
+use_projection_head: true

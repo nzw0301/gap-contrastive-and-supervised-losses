@@ -1,0 +1,6 @@
+# @package _global_
+loss:
+    name: contrastive_loss
+    normalize: false
+    replace: false
+    neg_size: 4
