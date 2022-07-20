@@ -1,4 +1,4 @@
-# Experimental code of [`On the Surrogate Gap between Contrastive and Supervised Losses`](https://arxiv.org/abs/2110.02501)
+# Experimental code of [`On the Surrogate Gap between Contrastive and Supervised Losses`](https://proceedings.mlr.press/v162/bao22e.html)
 
 ## System-related versions
 
@@ -92,6 +92,7 @@ WANDB_START_METHOD="thread"
 }
 ```
 
-## Related resources
+## Related resource
 
+- [PMLR](https://proceedings.mlr.press/v162/bao22e.html)
 - [arXiv](https://arxiv.org/abs/2110.02501)
