@@ -6,7 +6,7 @@
 - CUDA: 11.2
 - cudnn: 8005
 
-## Create experimental environment
+## Create an experimental environment
 
 ```bash
 pip install -r requirements.txt
@@ -17,7 +17,7 @@ git checkout 54b93919aadc117cbab1fe5a2af4664bb9842928
 pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
 
-Install optional library for efficient experiments.
+Install an optional library for efficient experiments.
 
 ```bash
 # Install gnu-parallel from source.
@@ -86,9 +86,10 @@ WANDB_START_METHOD="thread"
 ```
 @inproceedings{BNN2022,
     title = {{On the Surrogate Gap between Contrastive and Supervised Losses}},
-    author = {Bao, Han and Nagano, Yoshihiro and Nozawa, Kento },
+    author = {Bao, Han and Nagano, Yoshihiro and Nozawa, Kento},
     year = {2022},
     booktitle = {ICML},
+    pages = {1585--1606},
 }
 ```
 
@@ -96,3 +97,4 @@ WANDB_START_METHOD="thread"
 
 - [PMLR](https://proceedings.mlr.press/v162/bao22e.html)
 - [arXiv](https://arxiv.org/abs/2110.02501)
+- [Poster](https://hermite.jp/posters/202207_ICML.pdf)
